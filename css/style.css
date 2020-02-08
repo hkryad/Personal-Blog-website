@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import "post.css";
+@import "header.css";
+
+body {
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.bio {
+    text-align: center;
+}
+
+.bio h1 {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.bio p {
+    color: gray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    padding: 3%;
+}
+
+.card {
+    padding: 15px;
+    border: 1px solid rgb(180, 179, 179);
+    background-color: #f5f5f5;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin-bottom: 0px;
+}
+
+.card p {
+    color: gray;
+    margin-top: 5px;
+
+}
+
+.card a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: black;
+    color: #f5f5f5;
+    border-radius: 3px;
+}
+
+.card a:hover {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: gray;
+    color: black;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: #f5f5f5;
+    padding: 1PX;
+
+}
+
+
+
+@media(max-width:700px) {
+
+
+
+    .container {
+
+        grid-template-columns: auto auto;
+
+    }
+}
+
+@media(max-width:390px) {
+
+    .container {
+
+        grid-template-columns: auto;
+
+    }
+
+}
